@@ -1,31 +1,43 @@
-# Self-hosted AI starter kit
+# AI Starter Kit
 
-**Self-hosted AI Starter Kit** is an open-source Docker Compose template designed to swiftly initialize a comprehensive local AI and low-code development environment.
+**AI Starter Kit** is a powerful, self-hosted AI development environment built with Docker Compose. This template provides everything you need to quickly set up a local AI and automation platform.
 
-![n8n.io - Screenshot](https://raw.githubusercontent.com/n8n-io/self-hosted-ai-starter-kit/main/assets/n8n-demo.gif)
+![AI Starter Kit](https://raw.githubusercontent.com/Tony-91/Ai_starter/main/assets/n8n-demo.gif)
 
-Curated by <https://github.com/n8n-io>, it combines the self-hosted n8n
-platform with a curated list of compatible AI products and components to
-quickly get started with building self-hosted AI workflows.
+This project is based on the original [n8n self-hosted AI starter kit](https://github.com/n8n-io/self-hosted-ai-starter-kit) and has been customized for personal use.
 
-> [!TIP]
-> [Read the announcement](https://blog.n8n.io/self-hosted-ai/)
+## Features
 
 ### What’s included
 
-✅ [**Self-hosted n8n**](https://n8n.io/) - Low-code platform with over 400
-integrations and advanced AI components
+✅ [**Self-hosted n8n**](https://n8n.io/) - Low-code platform with over 400 integrations and advanced AI components
 
-✅ [**Ollama**](https://ollama.com/) - Cross-platform LLM platform to install
-and run the latest local LLMs
+✅ [**Ollama**](https://ollama.com/) - Cross-platform LLM platform to install and run the latest local LLMs
 
-✅ [**Qdrant**](https://qdrant.tech/) - Open-source, high performance vector
-store with an comprehensive API
+✅ [**Qdrant**](https://qdrant.tech/) - Open-source, high performance vector store with an comprehensive API
 
-✅ [**PostgreSQL**](https://www.postgresql.org/) -  Workhorse of the Data
-Engineering world, handles large amounts of data safely.
+✅ [**PostgreSQL**](https://www.postgresql.org/) -  Workhorse of the Data Engineering world, handles large amounts of data safely.
 
-### What you can build
+## Requirements
+
+- [Docker](https://docs.docker.com/get-docker/) (v24.0.0 or later)
+- [Docker Compose](https://docs.docker.com/compose/install/) (v2.23.0 or later)
+- [Git](https://git-scm.com/downloads)
+- At least 8GB RAM (16GB recommended for running multiple models)
+- At least 20GB free disk space
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Tony-91/Ai_starter.git
+cd Ai_starter
+
+# Start the services
+docker-compose up -d
+```
+
+## What You Can Build
 
 ⭐️ **AI Agents** for scheduling appointments
 
@@ -40,8 +52,8 @@ Engineering world, handles large amounts of data safely.
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+git clone https://github.com/Tony-91/Ai_starter.git
+cd Ai_starter
 cp .env.example .env # you should update secrets and passwords inside
 ```
 
@@ -50,8 +62,8 @@ cp .env.example .env # you should update secrets and passwords inside
 #### For Nvidia GPU users
 
 ```bash
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+git clone https://github.com/Tony-91/Ai_starter.git
+cd Ai_starter
 cp .env.example .env # you should update secrets and passwords inside
 docker compose --profile gpu-nvidia up
 ```
@@ -63,8 +75,8 @@ docker compose --profile gpu-nvidia up
 ### For AMD GPU users on Linux
 
 ```bash
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+git clone https://github.com/Tony-91/Ai_starter.git
+cd Ai_starter
 cp .env.example .env # you should update secrets and passwords inside
 docker compose --profile gpu-amd up
 ```
@@ -84,8 +96,8 @@ If you want to run Ollama on your mac, check the
 for installation instructions, and run the starter kit as follows:
 
 ```bash
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+git clone https://github.com/Tony-91/Ai_starter.git
+cd Ai_starter
 cp .env.example .env # you should update secrets and passwords inside
 docker compose up
 ```
@@ -104,8 +116,8 @@ If you're running OLLAMA locally on your Mac (not in Docker), you need to modify
 #### For everyone else
 
 ```bash
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+git clone https://github.com/Tony-91/Ai_starter.git
+cd Ai_starter
 cp .env.example .env # you should update secrets and passwords inside
 docker compose --profile cpu up
 ```
@@ -217,10 +229,15 @@ interact with the local filesystem.
 - [Local File Trigger](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.localfiletrigger/)
 - [Execute Command](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executecommand/)
 
-## 📜 License
+## Acknowledgments
 
-This project is licensed under the Apache License 2.0 - see the
-[LICENSE](LICENSE) file for details.
+- [n8n](https://n8n.io/) for the original self-hosted AI starter kit
+- [Ollama](https://ollama.com/) for making local LLMs accessible
+- [Qdrant](https://qdrant.tech/) for the powerful vector database
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## 💬 Support
 
