@@ -8,8 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial project setup with n8n, Ollama, Qdrant, and PostgreSQL
-- Basic configuration files and documentation
+- N/A
 
 ### Changed
 - N/A
@@ -25,6 +24,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 - N/A
+
+## [1.0.1] - 2025-07-21
+
+### Added
+- Added `COMPOSE_PROJECT_NAME` environment variable for better container isolation
+
+### Changed
+- Updated documentation to reflect new environment variable requirements
+- Improved container naming convention to prevent conflicts between projects
 
 ## [1.0.0] - 2025-07-20
 
